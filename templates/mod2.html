@@ -1,0 +1,214 @@
+﻿<meta HTTP-EQUIV="refresh"CONTENT="0.1">
+<!DOCTYPE html>
+<head>
+<style>
+body{
+background-color:rgb(230,255,230);
+}
+p1 {
+	border:1px solid gray;
+	padding: 15px;
+	background-color:rgb(210,255,210);
+	color:rgb(10,255,10);
+}
+p2 {
+	position: absolute;
+	left: 300px;
+	top: 95px;
+}
+p3 {
+	position: absolute;
+	left: -500px;
+	top: 30px;
+}
+p4 {
+	position: absolute;
+	left: 700px;
+	top: 70px;
+}
+p5 {
+	position: absolute;
+	left: 300px;
+	top: 316px;
+}
+p6 {
+	position: absolute;
+	left: 600px;
+	top: 316px;
+}
+p7 {
+	position: absolute;
+	left: -592px;
+	top: 95px;
+}
+p8 {
+	position: absolute;
+	left: 0px;
+	top: 95px;
+}
+p9 {
+	border:1px solid gray;
+	padding: 15px;
+	background-color:rgb(210,255,210);
+}
+.button {
+	display: incline-block;
+	border-radius: 4px;
+	padding: 20px;
+	background-color:"green";
+}
+.button-green {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 15px;
+	background: -moz-linear-gradient(
+		top,
+		#42ff42 0%,
+		#146600);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#42ff42),
+		to(#146600));
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 4px solid #134201;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+.button-gray {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 15px;
+	background: -moz-linear-gradient(
+		top,
+		#42ff42 0%,
+		#146600);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(rgb(210,210,210)),
+		to(rgb(110,110,110)));
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 4px solid #134201;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+.button-red {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 15px;
+	background: -moz-linear-gradient(
+		top,
+		#42ff42 0%,
+		#146600);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(rgb(255,100,100)),
+		to(rgb(255,10,10)));
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 4px solid #134201;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+</style>
+
+	<title>Supervisao de Bancada - Modo Automatico</title>
+<img src="{{url_for('static' ,filename='logo-mecat-green.jpg')}}" width="200" height="85"><img src="{{url_for('static' ,filename='logo-satc-green.jpg')}}" width="200" height="85" align=right>
+</head>
+
+<header>
+	<a href="main"><button type="button" class="button-gray">Voltar</button></a>
+	<p4><h3>Data e hora:<h3><h4>{{ mtime }}<h4></p4>
+	<p3><svg whidth="10" height="50">		
+		<circle cx="20" cy="20" r="10" stroke="gray" stroke-width="4" fill="{{mcolor7}}" align=right/>
+	</svg>
+	</p3>
+</header>
+
+
+<body>
+<p2>
+	<p1>Modo Automatico
+	<a href="vbotl"><button type="button" class="button-green">Ligar.</button></a>
+	<a href="vbotd"><button type="button" class="button-red">Desligar.</button></a>
+	</p1>
+	<br>
+</p2>
+	<h3>Estado do motor 1 e 2, cilindros 1 a 4:<h3>
+	<h4>{{ mm1 }}, {{ mm2 }}, {{ mc1 }}, {{ mc2 }}, {{ mc3 }}, {{ mc4 }}<h4>
+<img src="{{ url_for('static' ,filename=mrot1) }}" width="70" height="70">
+<img src="{{ url_for('static' ,filename=mrot2) }}" width="70" height="70">
+<img src="{{url_for('static' ,filename=mcil1)}}" width="180" height="70">
+<img src="{{url_for('static' ,filename=mcil2)}}" width="180" height="70">
+<img src="{{url_for('static' ,filename=mcil3)}}" width="180" height="70">
+<img src="{{url_for('static' ,filename=mcil4)}}" width="180" height="70">
+	<h3>Contadores tipo 1, 2, 3, 4, total:<h3>
+	<h4 style="color:blue">{{ mcindv1 }}, {{ mcindv2 }}, {{ mcindv3 }}, {{ mcindv4 }}, {{ mctotal }}</h4>
+<p5>
+	<h3>Nº de Casas Utilizadas:</h3>
+	<h4 style="color:red">{{ms}}</h4>
+</p5>
+<p6>	
+	<h3>Ultimo registro de material<h3>
+	<h4 style="color:red">{{ mmt }}<h4>
+</p6>	
+<p7>
+	<h3>Memória Atual:</h3>
+<img src="{{url_for('static' ,filename=mcaixa1)}}" width="40" height="85">
+<img src="{{url_for('static' ,filename=mcaixa2)}}" width="40" height="85">
+<img src="{{url_for('static' ,filename=mcaixa3)}}" width="40" height="85">
+<img src="{{url_for('static' ,filename=mcaixa4)}}" width="40" height="85">
+<img src="{{url_for('static' ,filename=mcaixa5)}}" width="40" height="85">
+<img src="{{url_for('static' ,filename=mcaixa6)}}" width="40" height="85">
+<img src="{{url_for('static' ,filename=mcaixa7)}}" width="40" height="85">
+<img src="{{url_for('static' ,filename=mcaixa8)}}" width="40" height="85">
+<img src="{{url_for('static' ,filename=mcaixa9)}}" width="40" height="85">
+<img src="{{url_for('static' ,filename=mcaixa10)}}" width="40" height="85">
+	<h4 style="color:red">{{mem}}</h4>
+</p7>
+<p8>	
+	<h3>Legenda:</h3>
+	<h4>Caixa baixa não metálica = 1<br>
+	<br>Caixa alta não metálica = 2<br>
+	<br>Caixa baixa metálica = 3<br>
+	<br>Caixa alta metálica = 4</h4>
+</p8>
+</body>
+</html>

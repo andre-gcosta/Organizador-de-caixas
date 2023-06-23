@@ -1,0 +1,126 @@
+<meta HTTP-EQUIV="refresh"CONTENT="0.1">
+<!DOCTYPE html>
+<head>
+<style>
+p1 {
+	border:1px solid gray;
+	padding: 15px;
+	background-color:rgb(210,255,210);
+	color:rgb(10,255,10);
+}
+.button {
+	display: incline-block;
+	border-radius: 4px;
+	padding: 20px;
+	background-color:"green";
+}
+.button-lgreen {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: green;
+	padding: 10px 15px;
+	background: -moz-linear-gradient(
+		top,
+		#42ff42 0%,
+		#146600);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(rgb(230,255,230)),
+		to(rgb(130,255,130)));
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 4px solid #134201;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+.button-lblue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: blue;
+	padding: 10px 15px;
+	background: -moz-linear-gradient(
+		top,
+		#42ff42 0%,
+		#146600);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(rgb(230,230,255)),
+		to(rgb(130,130,255)));
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 4px solid #134201;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+.button-red {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 15px;
+	background: -moz-linear-gradient(
+		top,
+		#42ff42 0%,
+		#146600);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(rgb(255,100,100)),
+		to(rgb(255,10,10)));
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 4px solid #134201;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+</style>
+	<img src="{{url_for('static' ,filename='logo-mecat.jpg')}}" width="200" height="85"><img src="{{url_for('static' ,filename='logo-satc.jpg')}}" width="200" height="85" align=right>
+<head>	
+	<title>Supervisao de Bancada</title>
+	<br>
+	<a href="mod0"><button type="button" class="button-red">Parar</button></a><br><h3>Data e hora:<h3><h4>{{ mtime }}<h4>
+</head>
+
+<body>
+	<h1>Selecione um modo de controle:</h1>
+
+	<br>
+	<a href="mod1"><button type="button" class="button-lblue">Manual</button></a>
+
+	<a href="mod2"><button type="button" class="button-lgreen">Automatico</button></a>
+<br>
+<br>
+<img src="{{url_for('static' ,filename='fundo.jpg')}}" width="750" height="210">
+<body>
+</html>
