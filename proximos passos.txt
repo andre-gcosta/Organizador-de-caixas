@@ -1,0 +1,7 @@
+25/06/2023
+1-deixar apenas as paginas html de inicio, modo manual e automatico, sem o refresh.
+2-arrumar a variavel que desliga todos, clicando apenas uma vez para funcionar
+3-acessar o modo automatico
+4-gerar as caixas pelo random ou algum botao
+5-passar as variaveis todas pelo <action>
+6-se tudo der certo, criar a parte visual das caixas na esteira e sendo empurradas pelo cilindro
