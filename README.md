@@ -1,4 +1,4 @@
-# README
+# README (Projeto de graduação)
 
 Projeto desenvolvido para a disciplina de Sistemas Embarcados II da faculdade de Engenharia mecatrônica.
 O objetivo da automação era:
